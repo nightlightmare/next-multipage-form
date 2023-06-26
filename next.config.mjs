@@ -3,7 +3,9 @@
 */
 const nextConfig = {
   output: 'export',
-  assetPrefix: './'
+  // assetPrefix: './'
+  basePath: '/next-multipage-form',
+  assetPrefix: '/next-multipage-form/',
 };
 
 export default nextConfig;
