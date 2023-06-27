@@ -1,31 +1,17 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import Link from 'next/link'
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+        <Link href={'/form'}>Form page</Link>
+        <Link href={'/form?id=1122'}>Form page for given id (1122)</Link>
+        <Link href={'/form/additional-step'}>Form page additional step</Link>
+        <Link href={'/form/additional-step?id=1122'}>Form page additional step for given id (1122)</Link>
+        <Link href={'/form/table-step'}>Form page table step</Link>
+        <Link href={'/form/table-step?id=1122'}>Form page table step for given id (1122)</Link>
       </div>
 
       <div className={styles.center}>
